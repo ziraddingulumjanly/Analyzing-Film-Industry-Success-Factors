@@ -5,5 +5,6 @@ This report explores critical aspects of the movie industry by analyzing key var
 
 <img width="555" alt="2" src="https://github.com/user-attachments/assets/9d8efe87-4777-4fad-a829-c0addbf9449c">
 
+<img width="555" alt="2" src="https://github.com/user-attachments/assets/909a9b3d-0ea1-4caf-ac22-58f28d14185f">
 
 # ZIRADDINGULUMJANLI
