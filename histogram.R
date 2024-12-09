@@ -2,7 +2,7 @@
 library(ggplot2)
 library(dplyr)
 
-# Set working directory and load the dataset
+# Set working directory, load the dataset
 setwd("C:\\Users\\zirad\\Downloads")
 movies <- read.csv("new_movie_dataset.csv")
 
@@ -22,7 +22,7 @@ plot1 <- ggplot(avg_gross_all, aes(x = reorder(genre, -avg_gross), y = avg_gross
        y = "Average Gross Revenue (USD)") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  scale_fill_manual(values = genre_colors)  # Use explicit genre colors
+  scale_fill_manual(values = genre_colors)  
 
 print(plot1)
 

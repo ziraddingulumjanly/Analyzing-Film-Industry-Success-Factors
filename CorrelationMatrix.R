@@ -2,11 +2,10 @@
 library(dplyr)
 library(ggcorrplot)
 
-# Set working directory and load the dataset
 setwd("C:\\Users\\zirad\\Downloads")
 movies <- read.csv("new_movie_dataset.csv")
 
-# Select only the relevant numerical columns
+# Selection of the relevant numerical columns only
 selected_columns <- movies %>% select(runtime, gross, budget, votes, score)
 
 # 1. Correlation matrix for all data (including budget = 0)

@@ -2,14 +2,12 @@
 library(ggplot2)
 library(dplyr)
 
-# Set working directory and load the dataset
 setwd("C:\\Users\\zirad\\Downloads")
 movies <- read.csv("new_movie_dataset.csv")
 
-# Verify the dataset structure
 str(movies)
 
-# Create a boxplot for runtime by genre with filled colors and improved aesthetics
+# Create a boxplot for runtime by genre 
 ggplot(movies, aes(x = genre, y = runtime, fill = genre)) +
   geom_boxplot(outlier.shape = NA, color = "black") +  # Exclude outliers and use black borders for clarity
   labs(title = "Distribution of Runtime by Genre",

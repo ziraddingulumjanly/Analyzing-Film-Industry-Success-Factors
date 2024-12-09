@@ -26,5 +26,5 @@ ggplot(movies_by_year_genre, aes(x = year, y = movie_count, fill = genre)) +
     legend.text = element_text(size = 12),
     legend.title = element_text(size = 14, face = "bold")
   ) +
-  scale_fill_manual(values = rainbow(length(unique(movies_by_year_genre$genre)))) +  # Use a brighter palette
-  guides(fill = guide_legend(ncol = 2))  # Split legend into two columns
+  scale_fill_manual(values = rainbow(length(unique(movies_by_year_genre$genre)))) +  
+  guides(fill = guide_legend(ncol = 2))  
